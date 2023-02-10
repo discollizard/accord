@@ -2,14 +2,10 @@ package accord.app.helpers;
 
 public class TUIHelper{
 
-    public final String[] validOpts;
+    public String[] validOpts = new String[3];
 
     public TUIHelper(){
-        this.validOpts = {
-            "-h",
-            "-a",
-            "-l",
-        };
+        this.validOpts = new String[]{"-h","-a","-l"};
     }
 
     public void showHelp(){
@@ -33,8 +29,7 @@ public class TUIHelper{
     "\n"+
     "-l (ogin): Logs in using your email and password (second and third arguments \n"+
     "           respectively). \n"+
-    "\n"+
-    "-a (nonymous): Logs in with a temporary account \n");
+    "\n");
     }
 
 }
